@@ -12,7 +12,7 @@ variables:
 
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '0a4ec232-b599-4282-addf-bcc0923ab6e3'
-  imageRepository: 'sattwikroyaccountsmicroservice'
+  imageRepository: 'sattwikroyaccountmicroservice'
   containerRegistry: 'mfpeacr.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
@@ -53,7 +53,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'sattwikroy570AccountsMicroservice.default'
+    environment: 'sattwikroy570AccountMicroservice.default'
     strategy:
       runOnce:
         deploy:
