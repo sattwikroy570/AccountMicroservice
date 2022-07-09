@@ -15,8 +15,6 @@ namespace AccountMicroservice
     {
         public static void Main(string[] args)
         {
-            var log4netRepository = log4net.LogManager.GetRepository(Assembly.GetEntryAssembly());
-
             CreateHostBuilder(args).Build().Run();
         }
 
