@@ -30,16 +30,16 @@ namespace AccountMicroservice.Repository
             new AccountStatement{AccountId=202,
             Statements= new List<Statement>()
             {
-                new Statement{Date=DateTime.Parse("21/02/2022"),Narration="Withdrawn",Withdrawal=0.00,Deposit=2000.00,ClosingBalance=2000.00},
-                new Statement{Date=DateTime.Parse("27/05/2022"),Narration="Deposited",Withdrawal=1500.00,Deposit=2000.00,ClosingBalance=500.00}
+                new Statement{Date=DateTime.ParseExact("21/02/2022", "dd/MM/yyyy", null),Narration="Withdrawn",Withdrawal=0.00,Deposit=2000.00,ClosingBalance=2000.00},
+                new Statement{Date=DateTime.ParseExact("27/05/2022","dd/MM/yyyy", null),Narration="Deposited",Withdrawal=1500.00,Deposit=2000.00,ClosingBalance=500.00}
                 }
             },
             new AccountStatement{AccountId=201,
             Statements= new List<Statement>()
             {
-                new Statement{Date=DateTime.Parse("21/02/2022"),Narration="Deposited",Withdrawal=0.00,Deposit=500.00,ClosingBalance=500.00},
-                new Statement{Date=DateTime.Parse("27/03/2022"),Narration="Deposited",Withdrawal=0.00,Deposit=2000.00,ClosingBalance=2500.00},
-                new Statement{Date=DateTime.Parse("21/06/2022"),Narration="Withdrawn",Withdrawal=1500.00,Deposit=0.00,ClosingBalance=1000.00}
+                new Statement{Date=DateTime.ParseExact("21/02/2022", "dd/MM/yyyy", null),Narration="Deposited",Withdrawal=0.00,Deposit=500.00,ClosingBalance=500.00},
+                new Statement{Date=DateTime.ParseExact("27/03/2022", "dd/MM/yyyy", null),Narration="Deposited",Withdrawal=0.00,Deposit=2000.00,ClosingBalance=2500.00},
+                new Statement{Date=DateTime.ParseExact("21/06/2022", "dd/MM/yyyy", null),Narration="Withdrawn",Withdrawal=1500.00,Deposit=0.00,ClosingBalance=1000.00}
                 }
             }
          };
