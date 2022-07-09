@@ -65,6 +65,8 @@ namespace AccountMicroservice
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Retail Banking System");
             });
 
+            loggerFactory.AddLog4Net();
+
             app.UseHttpsRedirection();
 
             app.UseAuthentication();

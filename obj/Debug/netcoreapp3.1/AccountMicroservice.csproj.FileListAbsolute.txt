@@ -559,3 +559,4 @@ D:\Work & Study\MFPE - CLoud\AccountMicroservice\obj\Debug\netcoreapp3.1\Account
 D:\Work & Study\MFPE - CLoud\AccountMicroservice\obj\Debug\netcoreapp3.1\AccountMicroservice.dll
 D:\Work & Study\MFPE - CLoud\AccountMicroservice\obj\Debug\netcoreapp3.1\AccountMicroservice.pdb
 D:\Work & Study\MFPE - CLoud\AccountMicroservice\obj\Debug\netcoreapp3.1\AccountMicroservice.genruntimeconfig.cache
+D:\Work & Study\MFPE - CLoud\AccountMicroservice\bin\Debug\netcoreapp3.1\log4net.config

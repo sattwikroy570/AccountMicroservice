@@ -20,8 +20,12 @@ namespace AccountMicroservice.Controllers
     public class AccountController : ControllerBase
     {
         IAccountRep db;
+
+        readonly log4net.ILog _log4net;
+
         public AccountController(IAccountRep _db)
         {
+            _log4net = log4net.LogManager.GetLogger(typeof(AccountController));
             db = _db;
         }
         // GET: api/<AccountController>
@@ -102,8 +106,10 @@ namespace AccountMicroservice.Controllers
                 }
                 return Ok(ob);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+
+                _log4net.Info(e);
                 return BadRequest();
             }
         }
