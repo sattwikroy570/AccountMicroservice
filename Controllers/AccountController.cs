@@ -96,6 +96,8 @@ namespace AccountMicroservice.Controllers
         public IActionResult deposit([FromBody] Transaction t)
         {
 
+
+            _log4net.Info("Deposit");
             var StringToken = Request.Headers["Authorization"];
             try
             {
